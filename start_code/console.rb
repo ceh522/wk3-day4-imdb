@@ -4,6 +4,10 @@ require_relative( 'models/movie' )
 
 require('pry')
 
+Casting.delete_all
+Movie.delete_all
+Star.delete_all
+
 movie1 = Movie.new({
   'title' => 'Toy Story',
   'genre' => 'animation'
